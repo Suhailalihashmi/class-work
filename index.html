@@ -1,92 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-     <style>
-
-        .container
-           
-          {
-            height: 100%;
-            width: 100vh;
-            background: #091836;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-          }
-
-          .insta{
-            width: 270px;
-            height: 270px;
-            background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
-            border-radius: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-                                 
-        }
-        .insta-inner{
-            width: 200px;
-            height: 200px;
-            border: 18px solid #fff;
-            border-radius: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
-        }
-        .insta-inner2{
-            width: 100px;
-            height: 100px;
-            border: 15px solid #fff;
-            border-radius: 50%;
-
-
-        }
-        .insta-inner::after{
-              content: '';
-              background: #fff;
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              position: absolute;
-             margin: auto;
-             border: white;
-             margin-bottom: 150px;
-             margin-left: 125px;
-
-
-                           }
-
-     </style>
-
-
-
-
+    <title></title>
+    <link rel="stylesheet" href="assest/css/animation2.css">
 </head>
+<style>
+    
+    #k{ height: 300px;
+    width: 300px;
+background-color: brown;
+    border: 1px green solid;
+
+ animation: moving;
+ animation-name: moving;
+ animation-duration: 5s;
+ animation-delay: 2s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+position: absolute;
+border-radius: 60%;
+
+}
+@keyframes moving {
+    0%{  background-color: greenyellow; left: 0px; top: 0px;      }
+    25%{
+ left: 400px;
+ top: 0px;
+ background-image: linear-gradient(red,green);
+    }
+    50%{
+        left: 400px;
+        top: 400px;
+ background-image: linear-gradient( orange,darkred);
+    }
+    75%{
+
+        left: 0px;
+        top: 400px;
+        background-color: lightsalmon;
+    }
+    100%{
+        left: 0px;
+        top: 0px;
+ background-color: blue;
+    }
+
+  }
+
+
+</style>
+
 <body>
-    
-    <div class="container">
-        <div class="insta">
-            <div class="insta-inner">
-              <div class="insta-inner2">
-                <div class="insta-inner::after">
 
-                </div>
- 
-              </div>
-            </div>
+    <div id="k"> </div>
 
-        </div>
+    <div id="stair"> </div>
+    <div id="stair1"></div>
+    <div id="stair2"></div>
 
-    </div>
-    
+
+
+
+
 </body>
+
+
+
 </html>
