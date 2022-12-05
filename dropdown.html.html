@@ -5,7 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        nav{
+    background-color: antiquewhite;
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+.left-menu{
+    flex: 20%;
+}
+.right-menu{
+    flex: 80%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li a{
+    font-size: 33px;
+    text-decoration: none;
+    color: rgb(226, 43, 43);
+    padding: 80px;
+}
+.dropdown .dropdown-list{
+    position: absolute;
+    width: 100px;
+    left: 540px;
+    display: block;
+
+
+    display: none;
+}
+.dropdown:hover .dropdown-list{
+   display: block;
+}
+
+    </style>
 </head>
 <body>
     <nav>
